@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QR Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de QR Code</h1>
+        <div class="input-container">
+            <label for="texto">Texto/URL:</label>
+            <input type="text" id="texto" placeholder="Digite o texto ou URL">
+            <button id="gerarQRCode">Gerar QR Code</button>
+        </div>
+        <div id="qrcode"></div>
+        <div class="input-qrcode">
+            <label for="quantidadeQRCode">Quantidade de QR Codes por folha:</label>
+            <input type="number" id="quantidadeQRCode" min="1" value="1">
+        </div>
+        <div class="input-qrcode">
+            <label for="quantidadeFolhas">Quantidade de folhas:</label>
+            <input type="number" id="quantidadeFolhas" min="1" value="1">
+        </div>
+        <button id="imprimirQRCode">Imprimir QR Code</button>
+        <button id="limparQRCode">Limpar</button>
+    </div>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
